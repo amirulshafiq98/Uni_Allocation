@@ -3,7 +3,7 @@
 </p>
 
 # Project Background
-After reading the WEF report from January 2025 [Link](https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf), I was curious as to what jobs would be impacted by this new AI age. Looking through the report, I found out what jobs were expected to grow in the next 5 years and which ones are likely to be automated by AI. I then wondered: Do universities consider such reports when deciding how to allocate admissions for their courses?. After some short amount of digging, the answer was inconclusive. In the context of Singapore (where I am from), the Ministry of Education (MOE) in Singapore determines student intake for each course based on economic factors and course popularity. While this approach does addresses course allocation, it raises further questions:
+After reading the WEF report from [January 2025](https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf), I was curious as to what jobs would be impacted by this new AI age. Looking through the report, I found out what jobs were expected to grow in the next 5 years and which ones are likely to be automated by AI. I then wondered: 'Do universities consider such reports when deciding how to allocate admissions for their courses?'. After some short amount of digging, the answer was inconclusive. In the context of Singapore (where I am from), the Ministry of Education (MOE) determines student intake for each course based on economic factors and course popularity. While this approach does address course allocation, it raises further questions:
 
 - What is the precise methodology employed by the ministry to determine student numbers for each course?
 - Does the allocated education budget influence the intake numbers for in-demand courses?
