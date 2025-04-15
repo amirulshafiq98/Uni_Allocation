@@ -67,8 +67,7 @@ For this model λ=0.1 (0.00 ≤ λ ≤ 0.10),
 $$ Students_i = {Total \\,\\, Students\\,\\, × \\,\\, e^{-λ\\,\\,×\\,\\,Rank_i} \over ∑_{j=1}^Ne^{-λ\\,\\,×\\,\\,Rank_j}} $$
 
 Where:
-- k = steepness parameter (lower = gentler transition)
-- Midpoint = median rank (e.g. middle rank)
+- λ = decay rate (lower = slower decay)
 
 Here are the equations translated into python:
 
