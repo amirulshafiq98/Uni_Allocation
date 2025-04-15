@@ -12,7 +12,7 @@ After reading the WEF report from [January 2025](https://reports.weforum.org/doc
 These questions were what motivated me to start this project, which aims to explore a method for allocating university admissions that reflects real-world demand. A key concern for universities is ensuring their graduates enter a relevant and receptive job market. While some data is unknown to me as I am merely a soon-to-be graduate, we can at least simulate this situation to maximise the student allocation to produce graduates that are employable.
 
 # Data Structure
-The data was sourced from a YouTuber named [Tina Huang](https://www.youtube.com/watch?v=x2x8Ww7Es4s&t=43s) who compiled all of the jobs mentioned in the report into an Excel file. I then manually removed the jobs that did not require a degree and ranked them based on the same report. To tailor this analysis to Singapore, I used ChatGPT to generate a table of relevant degree programs offered in the country that was able to do the jobs mentioned in the report. Subsequently, I added minimum student numbers for each course and their respective branches of study. This was done to simulate a more official structure and facilitate coding. The first 20 majors in the Excel file can be seen below:
+The data was sourced from a YouTuber named [Tina Huang](https://www.youtube.com/watch?v=x2x8Ww7Es4s&t=43s) who compiled all of the jobs mentioned in the report into an Excel file. I then manually removed the jobs that did not require a degree and ranked them based on the same report. To tailor this analysis to Singapore, I used ChatGPT to generate a table of relevant degree programs offered in the country that was able to do the jobs mentioned in the report. Subsequently, I added minimum student numbers for each course and their respective branches of study. This was done to simulate a more official structure and facilitate coding. The first 20 majors in the [Excel file](https://github.com/amirulshafiq98/Uni_Allocation/blob/main/Occupation_Major_Mapping_Singapore.xlsx) can be seen below:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7b734c52-9e48-47e5-b444-8659759c9389">
@@ -27,7 +27,7 @@ Prior to coding, I researched the average cost per student for various courses. 
 
 In addition to these values, I incorporated constraints such as a maximum university budget of $500,000,000 and per-course budget limits (Top courses: $10,000,000; Other courses: $5,000,000). With these parameters defined, I plotted the student allocations for each major in a histogram to visualise the gradual decline in allocations across the various courses.
 
-### Code
+### Code:
 Python libraries used in this project are:
 - pandas
 - matplotlib
@@ -76,7 +76,7 @@ Here are the equations translated into python:
 
 3. With the distribution models established, the next step involved defining variables, deviations, and the objective function.
 
-The constraints were the next thing to establish which includes:
+The constraints are:
 - Budget constraints
 - Min/Max students per major
 - Branch Constraints
@@ -87,6 +87,12 @@ The constraints were the next thing to establish which includes:
 4. The model was then solved, and the resulting allocation data was stored in a DataFrame
 
 ![Fourth](https://github.com/user-attachments/assets/ca8238f1-d22d-47ce-81bd-ab92ec64b0fc)
+
+5. The outputted power law model Excel file can be downloaded here [Link](https://github.com/amirulshafiq98/Uni_Allocation/blob/main/Power%20Law_Student_Allocation.xlsx)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/94d322fa-0637-4dbc-95da-e64eab27b631">
+</p>
 
 ### Model Comparison
 
