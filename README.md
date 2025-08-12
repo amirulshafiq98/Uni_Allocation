@@ -2,7 +2,7 @@
   <img src="https://c1.wallpaperflare.com/preview/294/960/948/university-student-graduation-photo-hats.jpg">
 </p>
 
-# Project Background
+# Project Background [Steamlit Link](https://uniallocation.streamlit.app/)
 After reading the WEF report from [January 2025](https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf), I was curious as to what jobs would be impacted by this new AI age. Looking through the report, I found out what jobs were expected to grow in the next 5 years and which ones are likely to be automated by AI. I then wondered: 'Do universities consider such reports when deciding how to allocate admissions for their courses?'. After some short amount of digging, the answer was inconclusive. In the context of Singapore (where I am from), the Ministry of Education (MOE) determines student intake for each course based on economic factors and course popularity. While this approach does address course allocation, it raises further questions:
 
 - What is the precise methodology employed by the ministry to determine student numbers for each course?
@@ -18,7 +18,7 @@ The data was sourced from a YouTuber named [Tina Huang](https://www.youtube.com/
   <img src="https://github.com/user-attachments/assets/7b734c52-9e48-47e5-b444-8659759c9389">
 </p>
 
-# Executive Summary
+# Executive Summary [Steamlit Link](https://uniallocation.streamlit.app/)
 ### Overview:
 
 ![Histogram](https://github.com/user-attachments/assets/bd2d4948-cdae-4585-93eb-b648c80f74b7)
@@ -131,13 +131,13 @@ While the power law model provides a general approach for gradual decline, the e
 - The theoretical drop smoothness values suggest that the exponential decay model might be optimal under minimal constraints in the ILP optimiser. While not fully representative of real-world scenarios, this highlights the model's ability to allocate students based on the ranking of majors
 - Another way to evaluate a model's allocation prowess is by seeing the mean drop smoothness. In the case of the power law model, the mean was 18.61% which is slightly higher than the exponential decay model (15.95%) and much lower than the sigmoid model (55.46%)
 
-# Recommendations
+# Recommendations [Steamlit Link](https://uniallocation.streamlit.app/)
 - The power law model is recommended as the best overall model due to its closer alignment with theoretical smoothing and its effectiveness in allocating a majority of students to top-ranked courses
 - Given that the constants used to determine the decline are currently arbitrary (alpha = 0.5, decay_rate = 0.01, k = 0.1), future improvements could involve using machine learning to optimise these values for each model, leading to a more refined allocation spread before final model selection
 - If the exponential decay model is preferred due to its theoretical accuracy, reducing the number of constraints might lead to a more optimal allocation spread
 - Generally, the sigmoid model should not be considered unless there is a need to fill up the less popular courses
 
-# Limitations
+# Limitations [Steamlit Link](https://uniallocation.streamlit.app/)
 - The branch-specific budget constraints were not entirely reflective of real-world scenarios (e.g., art majors typically have different budgets than engineering majors), partly due to the ILP model's requirement for less-than-or-equal/greater-than-or-equal equations for optimization
 - My lack of expertise in machine learning prevented the development of a model to automatically determine optimal values for the decline constants. This is an area where collaboration with an ML engineer could be beneficial
 - For this project, I utilised averages and generalised values to define the model parameters. Real-world scenarios are significantly more complex, involving numerous dynamic factors and potentially requiring additional constraints that could impact the model's usability
